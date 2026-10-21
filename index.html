@@ -1,175 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sitting on an Oak</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
       background: #f8f7f0;
-      color: #55504c;
-      font-family: Georgia, "Times New Roman", serif;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
     }
 
-    .page {
-      width: min(94%, 900px);
-      margin: 50px auto;
-      padding: 65px 35px 55px;
-      text-align: center;
-      background: #fffefa;
-      border: 1px solid #e6e4db;
-      box-shadow: 0 12px 45px rgba(70, 80, 70, .06);
+    main {
+      width: 100%;
+      max-width: 1500px;
+      padding: 16px;
     }
 
-    .illustration {
-      width: min(100%, 350px);
+    img {
+      display: block;
+      width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto 25px;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 4.5rem);
-      font-style: italic;
-      font-weight: normal;
-      letter-spacing: -1.5px;
-      color: #479db1;
-      margin: 0 0 35px;
-    }
-
-    .divider {
-      width: 70px;
-      height: 1px;
-      background: #b7c9bd;
-      margin: 0 auto 38px;
-    }
-
-    blockquote {
       margin: 0 auto;
-      max-width: 650px;
-      font-size: clamp(1.2rem, 3vw, 1.65rem);
-      line-height: 1.85;
-      font-style: italic;
-      color: #625b55;
-    }
-
-    .author {
-      display: block;
-      margin-top: 25px;
-      font-size: 1rem;
-      font-style: normal;
-      color: #8b8178;
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        margin: 18px auto;
-        padding: 45px 20px;
-      }
-      blockquote { line-height: 1.7; }
     }
   </style>
 </head>
+
 <body>
-  <main class="page">
-
-    <!-- Three owls and their oak branch -->
-    <svg class="illustration" viewBox="0 0 400 230"
-         xmlns="http://www.w3.org/2000/svg"
-         role="img" aria-label="Three owls sitting together on an oak branch">
-
-      <!-- Branch -->
-      <path d="M22 188 Q165 184 380 190"
-            fill="none" stroke="#847b69"
-            stroke-width="5" stroke-linecap="round"/>
-
-      <!-- Twigs and leaves -->
-      <g stroke="#847b69" stroke-width="2.5" fill="none">
-        <path d="M72 187 Q52 145 45 92"/>
-        <path d="M310 188 Q330 148 355 125"/>
-      </g>
-      <g fill="#a2b7a2">
-        <ellipse cx="35" cy="116" rx="15" ry="7"
-                 transform="rotate(40 35 116)"/>
-        <ellipse cx="53" cy="100" rx="15" ry="7"
-                 transform="rotate(-35 53 100)"/>
-        <ellipse cx="337" cy="147" rx="16" ry="7"
-                 transform="rotate(30 337 147)"/>
-        <ellipse cx="356" cy="126" rx="15" ry="7"
-                 transform="rotate(-30 356 126)"/>
-      </g>
-
-      <!-- Three owls -->
-      <g stroke="#856e58" stroke-width="1.5">
-        <g transform="translate(96 65)">
-          <path d="M0 103 Q-7 39 0 12 L17 25
-                   Q43 12 67 25 L84 12
-                   Q92 44 84 103 Q42 125 0 103Z"
-                fill="#bd8860"/>
-          <ellipse cx="42" cy="70" rx="29" ry="42"
-                   fill="#e3bc90" stroke="none"/>
-          <circle cx="26" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="58" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="28" cy="46" r="5" fill="#4b554c"/>
-          <circle cx="56" cy="46" r="5" fill="#4b554c"/>
-          <path d="M42 53 l-6 10 h12Z" fill="#d59a52"/>
-          <path d="M22 112 v12 m39 -12 v12"
-                fill="none" stroke="#856e58" stroke-width="3"/>
-        </g>
-
-        <g transform="translate(200 93) scale(.76)">
-          <path d="M0 103 Q-7 39 0 12 L17 25
-                   Q43 12 67 25 L84 12
-                   Q92 44 84 103 Q42 125 0 103Z"
-                fill="#b77c67"/>
-          <ellipse cx="42" cy="70" rx="29" ry="42"
-                   fill="#e9c4a3" stroke="none"/>
-          <circle cx="26" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="58" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="28" cy="46" r="5" fill="#4b554c"/>
-          <circle cx="56" cy="46" r="5" fill="#4b554c"/>
-          <path d="M42 53 l-6 10 h12Z" fill="#d59a52"/>
-          <path d="M22 112 v12 m61 -12 v12"
-                fill="none" stroke="#856e58" stroke-width="3"/>
-        </g>
-
-        <g transform="translate(283 107) scale(.65)">
-          <path d="M0 103 Q-7 39 0 12 L17 25
-                   Q43 12 67 25 L84 12
-                   Q92 44 84 103 Q42 125 0 103Z"
-                fill="#b99570"/>
-          <ellipse cx="42" cy="70" rx="29" ry="42"
-                   fill="#e6c8a1" stroke="none"/>
-          <circle cx="26" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="58" cy="46" r="13" fill="#fff8e9"/>
-          <circle cx="28" cy="46" r="5" fill="#4b554c"/>
-          <circle cx="56" cy="46" r="5" fill="#4b554c"/>
-          <path d="M42 53 l-6 10 h12Z" fill="#d59a52"/>
-          <path d="M22 112 v12 m61 -12 v12"
-                fill="none" stroke="#856e58" stroke-width="3"/>
-        </g>
-      </g>
-    </svg>
-
-    <h1>Sitting on an Oak</h1>
-    <div class="divider"></div>
-
-    <blockquote>
-      A wise old owl sat on an oak,<br>
-      the more he saw the less he spoke,<br>
-      the less he spoke the more he heard,<br>
-      why can’t we all be like that wise old bird?
-      <span class="author">— Edward Hersey Richards</span>
-    </blockquote>
-
+  <main>
+    <img
+      src="Winter%20Owls%20on%20a%20Snowy%20Oak.png"
+      alt="Sitting on an Oak — three owls perched on a snowy oak tree beside the wise old owl poem">
   </main>
 </body>
 </html>
